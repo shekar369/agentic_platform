@@ -1,0 +1,25 @@
+{
+  "title": "Tool Configuration",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "title": "Node Label",
+      "default": "Tool"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "tool_name": {
+      "type": "string",
+      "title": "Tool Name"
+    },
+    "parameters": {
+      "type": "string",
+      "title": "Parameters (JSON)",
+      "format": "textarea"
+    }
+  },
+  "required": ["label", "tool_name"]
+}

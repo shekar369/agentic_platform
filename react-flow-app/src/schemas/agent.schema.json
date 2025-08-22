@@ -1,0 +1,29 @@
+{
+  "title": "AI Agent Configuration",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "title": "Node Label",
+      "default": "AI Agent"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "system_prompt": {
+      "type": "string",
+      "title": "System Prompt",
+      "format": "textarea"
+    },
+    "temperature": {
+      "type": "number",
+      "title": "Temperature",
+      "default": 0.7,
+      "minimum": 0,
+      "maximum": 1,
+      "step": 0.1
+    }
+  },
+  "required": ["label", "system_prompt"]
+}
