@@ -1,4 +1,63 @@
+@import "tailwindcss";
+@import "tw-animate-css";
 @import 'reactflow/dist/style.css';
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 24 39 53;
+    --card: 255 255 255;
+    --card-foreground: 24 39 53;
+    --popover: 255 255 255;
+    --popover-foreground: 24 39 53;
+    --primary: 38 52 69;
+    --primary-foreground: 248 250 252;
+    --secondary: 241 245 249;
+    --secondary-foreground: 38 52 69;
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
+    --accent: 241 245 249;
+    --accent-foreground: 38 52 69;
+    --destructive: 220 38 38;
+    --destructive-foreground: 248 250 252;
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 24 39 53;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 24 39 53;
+    --foreground: 248 250 252;
+    --card: 24 39 53;
+    --card-foreground: 248 250 252;
+    --popover: 24 39 53;
+    --popover-foreground: 248 250 252;
+    --primary: 248 250 252;
+    --primary-foreground: 38 52 69;
+    --secondary: 51 65 85;
+    --secondary-foreground: 248 250 252;
+    --muted: 51 65 85;
+    --muted-foreground: 148 163 184;
+    --accent: 51 65 85;
+    --accent-foreground: 248 250 252;
+    --destructive: 153 27 27;
+    --destructive-foreground: 248 250 252;
+    --border: 51 65 85;
+    --input: 51 65 85;
+    --ring: 226 232 240;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
 
 body {
   margin: 0;

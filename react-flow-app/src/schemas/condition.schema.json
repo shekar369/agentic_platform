@@ -1,0 +1,16 @@
+{
+  "title": "Condition Configuration",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "title": "Node Label",
+      "default": "Condition"
+    },
+    "expression": {
+      "type": "string",
+      "title": "Boolean Expression"
+    }
+  },
+  "required": ["label", "expression"]
+}

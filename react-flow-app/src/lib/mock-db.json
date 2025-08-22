@@ -1,0 +1,25 @@
+{
+  "workflows": {
+    "1": {
+      "id": "1",
+      "name": "Customer Support Workflow",
+      "nodes": [
+        {
+          "id": "1",
+          "type": "agent",
+          "position": { "x": 250, "y": 25 },
+          "data": { "label": "Support Agent", "system_prompt": "You are a helpful assistant." }
+        },
+        {
+          "id": "2",
+          "type": "tool",
+          "position": { "x": 250, "y": 250 },
+          "data": { "label": "Get Order Details", "tool_name": "getOrderDetails" }
+        }
+      ],
+      "edges": [
+        { "id": "e1-2", "source": "1", "target": "2" }
+      ]
+    }
+  }
+}

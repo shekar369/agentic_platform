@@ -1,0 +1,12 @@
+{
+  "title": "Parallel Block Configuration",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "title": "Block Label",
+      "default": "Parallel Execution"
+    }
+  },
+  "required": ["label"]
+}
